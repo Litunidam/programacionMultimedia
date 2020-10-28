@@ -33,8 +33,10 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tv.setText("Mira ste Jayce");
+                String jayce = "Mira ste jayce";
+                tv.setText(jayce);
                 background.setBackgroundResource(R.drawable.jayce);
+                //background.setBackground(getDrawable(R.drawable.jayce)); deprecated
 
 
             }
@@ -43,8 +45,9 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String holis = "Holis";
                 background.setBackgroundColor(0x0000FF00);
-                tv.setText("Holis");
+                tv.setText(holis);
             }
         });
 
